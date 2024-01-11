@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+h1{
+    background-color: lightsteelblue;
+    text-align: center;
+
+}
+
+h2{
+    text-align: center;
+}
+
+
+.box {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: gray;
+    color: black;
+}

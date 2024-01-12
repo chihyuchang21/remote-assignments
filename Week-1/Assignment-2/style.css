@@ -1,6 +1,4 @@
 * {
-    /*margin: 0;  !* 消除間距*!*/
-    /*padding: 0;*/
     box-sizing: border-box;
 }
 
@@ -8,19 +6,26 @@
 .main-header{
     background-color: lightgrey;
     margin-bottom: -25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .name {
     font-size: 14px;
-    margin-right: 20px; /* 調整間距 */
-    font-weight: normal; /* 不要套用h1粗體 */
+    margin-right: 20px; /*調整間距*/
+    font-weight: normal; /*不要套用h1粗體*/
     margin-left: 20px;
 }
 
-li {
-    list-style: none; /* 移除list的點 */
+.main-nav {
+    display: flex;
+    list-style: none; /*移除list的點*/
 }
 
+.main-nav li {
+    margin-right: 20px; /*調整Item間的間距*/
+}
 
 .content-first-title{
     background-color: lightsteelblue;
@@ -50,13 +55,6 @@ h2{
 }
 
 
-
-.main-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .header-content {
     display: flex;
     flex-direction: row; /* h1 和 .main-nav 橫擺 */
@@ -64,12 +62,5 @@ h2{
 }
 
 
-.main-nav {
-    display: flex;
-    list-style: none;
-}
 
-.main-nav li {
-    margin-right: 20px; /* 調整間距 */
-}
 

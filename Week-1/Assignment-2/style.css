@@ -2,9 +2,48 @@
     box-sizing: border-box;
 }
 
+body header{
+    background-color: grey;
+}
+
+.navbar_l{
+    text-align:left;
+}
+
+.navbar_r{
+    text-align:right;
+}
+
+
+body header nav {
+    flex: 5 1 500px;
+}
+body header nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+body header nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.35rem;
+    transition: all 0.2s ease;
+    padding-bottom: 0.3rem;
+}
+
+
+body header nav ul {
+    flex-direction: column;
+}
+body header nav ul li {
+    padding: 0.5rem 0.25rem;
+}
+
 h1{
     background-color: lightsteelblue;
+    height: 200px;
     text-align: center;
+    line-height: 200px;
 
 }
 
@@ -17,6 +56,6 @@ h2{
     display: inline-block;
     width: 100px;
     height: 100px;
-    background: gray;
+    background: grey;
     color: black;
 }

@@ -6,15 +6,19 @@
 
 
 .main-header{
-    background-color: grey;
+    background-color: lightgrey;
+    margin-bottom: -25px;
 }
 
-.name{
+.name {
     font-size: 14px;
+    margin-right: 20px; /* 調整間距 */
+    font-weight: normal; /* 不要套用h1粗體 */
+    margin-left: 20px;
 }
 
 li {
-    list-style: none; /* 移除點或數字 */
+    list-style: none; /* 移除list的點 */
 }
 
 
@@ -41,40 +45,11 @@ h2{
     width: 300px;
     height: 100px;
     text-align: center;
-    background: grey;
+    background: lightslategrey;
     color: black;
 }
 
 
-/*.main-header {*/
-/*    display: flex;*/
-/*    flex-direction: row;*/
-/*    justify-content: space-between;*/
-/*    align-items: center; !* 可以根据需要添加对齐方式 *!*/
-/*}*/
-
-
-/*@media (min-width: 769px) {*/
-
-/*    .main-header,*/
-/*    .main-nav {*/
-/*        display: flex;*/
-/*    }*/
-/*    .main-header {*/
-/*        flex-direction: column;*/
-/*        align-items: center;*/
-/*    }*/
-
-/*}*/
-
-/*@media (min-width: 1025px) {*/
-
-/*    .main-header {*/
-/*        flex-direction: row;*/
-/*        justify-content: space-between;*/
-/*    }*/
-
-/*}*/
 
 .main-header {
     display: flex;
@@ -84,14 +59,10 @@ h2{
 
 .header-content {
     display: flex;
-    flex-direction: row; /* 将 h1 和 .main-nav 放在水平方向 */
-    align-items: center; /* 可以根据需要添加对齐方式 */
+    flex-direction: row; /* h1 和 .main-nav 橫擺 */
+    align-items: center; /* 對齊 */
 }
 
-.name {
-    font-size: 14px;
-    margin-right: 20px; /* 调整标题和导航之间的间距 */
-}
 
 .main-nav {
     display: flex;
@@ -99,6 +70,6 @@ h2{
 }
 
 .main-nav li {
-    margin-right: 15px; /* 调整导航项之间的间距 */
+    margin-right: 20px; /* 調整間距 */
 }
 

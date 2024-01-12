@@ -1,6 +1,6 @@
 * {
-    margin: 0;  /* 消除間距*/
-    padding: 0;
+    /*margin: 0;  !* 消除間距*!*/
+    /*padding: 0;*/
     box-sizing: border-box;
 }
 
@@ -9,7 +9,9 @@
     background-color: grey;
 }
 
-
+.name{
+    font-size: 14px;
+}
 
 li {
     list-style: none; /* 移除點或數字 */
@@ -44,30 +46,59 @@ h2{
 }
 
 
+/*.main-header {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    justify-content: space-between;*/
+/*    align-items: center; !* 可以根据需要添加对齐方式 *!*/
+/*}*/
+
+
 /*@media (min-width: 769px) {*/
-/*    .navbar_r {*/
+
+/*    .main-header,*/
+/*    .main-nav {*/
 /*        display: flex;*/
-/*        justify-content: space-between; !* 项目之间的空间均匀分布 *!*/
-/*     }*/
+/*    }*/
+/*    .main-header {*/
+/*        flex-direction: column;*/
+/*        align-items: center;*/
+/*    }*/
 
 /*}*/
 
-/*test*/
+/*@media (min-width: 1025px) {*/
 
+/*    .main-header {*/
+/*        flex-direction: row;*/
+/*        justify-content: space-between;*/
+/*    }*/
 
+/*}*/
 
-@media (min-width: 769px) {
-    .main-header {
-        flex-direction: row;
-        justify-content: space-between;
-    }
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-
-
-@media screen and (min-width: 1200px) {
-    .container {
-        width: 1200px; /* Total width of content boxes should be fixed in 1200px when screen width > 1200px. */
-        margin: 0 auto; /* 將 .container 置中 */
-    }
+.header-content {
+    display: flex;
+    flex-direction: row; /* 将 h1 和 .main-nav 放在水平方向 */
+    align-items: center; /* 可以根据需要添加对齐方式 */
 }
+
+.name {
+    font-size: 14px;
+    margin-right: 20px; /* 调整标题和导航之间的间距 */
+}
+
+.main-nav {
+    display: flex;
+    list-style: none;
+}
+
+.main-nav li {
+    margin-right: 15px; /* 调整导航项之间的间距 */
+}
+

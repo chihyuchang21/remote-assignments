@@ -14,7 +14,14 @@ function countAandB(input) {
 }
 
 function toNumber(input) {
-// your code here
+    let str = ''
+
+    for (let i=0; i < input.legth; i++){
+        str[i] = input[i].charCodeAt(0)
+    }
+
+    return Str
+
 }
 
 let input1 = ['a', 'b', 'c', 'a', 'c', 'a', 'c'];

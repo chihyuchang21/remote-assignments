@@ -1,50 +1,26 @@
 * {
+    margin: 0;  /* 消除間距*/
+    padding: 0;
     box-sizing: border-box;
 }
 
-body header{
+
+.main-header{
     background-color: grey;
 }
 
-.navbar_l{
-    text-align:left;
-}
 
-.navbar_r{
-    text-align:right;
+
+li {
+    list-style: none; /* 移除點或數字 */
 }
 
 
-body header nav {
-    flex: 5 1 500px;
-}
-body header nav ul {
-    display: flex;
-    list-style-type: none;
-    justify-content: space-around;
-}
-body header nav ul li a {
-    color: black;
-    text-decoration: none;
-    font-size: 1.35rem;
-    transition: all 0.2s ease;
-    padding-bottom: 0.3rem;
-}
-
-
-body header nav ul {
-    flex-direction: column;
-}
-body header nav ul li {
-    padding: 0.5rem 0.25rem;
-}
-
-h1{
+.content-first-title{
     background-color: lightsteelblue;
     height: 200px;
     text-align: center;
     line-height: 200px;
-
 }
 
 h2{
@@ -52,10 +28,44 @@ h2{
 }
 
 
+.container{
+    display: flex;
+    height: 280px;
+    flex-wrap: wrap; /* 允許換行 */
+    justify-content: space-around;
+}
+
 .box {
-    display: inline-block;
-    width: 100px;
+    width: 300px;
     height: 100px;
+    text-align: center;
     background: grey;
     color: black;
+}
+
+
+/*@media (min-width: 769px) {*/
+/*    .navbar_r {*/
+/*        display: flex;*/
+/*        justify-content: space-between; !* 项目之间的空间均匀分布 *!*/
+/*    }*/
+
+/*}*/
+
+
+
+@media (min-width: 769px) {
+    .main-header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1200px; /* Total width of content boxes should be fixed in 1200px when screen width > 1200px. */
+        margin: 0 auto; /* 將 .container 置中 */
+    }
 }

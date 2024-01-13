@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+/*========= Nav Bar =========*/
 
 .main-header{
     background-color: lightgrey;
@@ -19,13 +20,15 @@
 }
 
 .main-nav {
-    display: flex;
+    display: flex; /*重要！！*/
     list-style: none; /*移除list的點*/
 }
 
 .main-nav li {
     margin-right: 20px; /*調整Item間的間距*/
 }
+
+/*========= Welcome Msg =========*/
 
 .content-first-title{
     background-color: lightsteelblue;
@@ -34,32 +37,56 @@
     line-height: 200px;
 }
 
+/*========= Box Section =========*/
+
 h2{
     text-align: center;
 }
 
 
 .container{
-    display: flex;
-    height: 280px;
-    flex-wrap: wrap; /* 允許換行 */
-    justify-content: space-around;
+    display:flex;
+    justify-content:center;
 }
+
+
 
 .box {
-    width: 300px;
-    height: 100px;
+    font-size:13px;
+    text-align:center;
+
+    width:450px;
+    height:80px;
+    background:#8899aa;
+    margin:10px;
+    margin-top:5px;
+    padding-top:5px;
+}
+
+/*========= Button =========*/
+
+.button-container {
     text-align: center;
-    background: lightslategrey;
-    color: black;
 }
 
-
-.header-content {
-    display: flex;
-    flex-direction: row; /* h1 和 .main-nav 橫擺 */
-    align-items: center; /* 對齊 */
+.button-container button {
+    background-color: lightsteelblue;
+    width: 100px;
+    position: relative;
+    top: 10px;
+    padding: 10px;
+    border: none;
 }
+
+/*========= Media Query =========*/
+
+@media (min-width: 1200px)
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
 
 
 

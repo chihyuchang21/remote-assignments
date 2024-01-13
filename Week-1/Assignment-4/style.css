@@ -40,7 +40,7 @@
     margin-top: -20px;
     height: 80px;
     line-height: 80px;
-    /*align-items: center;*/
+
 }
 
 .grey-banner img {
@@ -54,12 +54,23 @@
 }
 
 
-
-.topic1{
+.topic-intro{
     margin-left:340px;
-    margin-top: 150px;
+    margin-top: 80px;
     line-height: 1;
 }
+
+.container-pic{
+    display: inline-block;
+    border: 1px solid;
+    vertical-align: top;
+    margin: 10px;  /*把兩個div推開*/
+}
+
+.no-border{
+    border: none;
+}
+
 
 
 #br{                    /*感覺不宜用br...*/
@@ -70,10 +81,18 @@
     margin-top:-50px;
 }
 
+
+.search-container{
+    margin-left: auto;
+    margin-right: 10px; /*這位置還要調整*/
+}
+
+
 /*========= Button =========*/
 
 .button-container {
-    text-align: center;
+    text-align: right;
+    margin-left: auto; /* 將 .button-container 推到右邊 */
 }
 
 .button-container button {
@@ -83,7 +102,11 @@
     background-color: #FEFEFF;
     width: 150px;
     padding: 10px;
+    margin-right: 100px;
     border: 0.5px solid #DADCE0;
+    /*align-self:flex-end;*/ /*align-self只在flex-container的子元素影響，block-level不起作用*/
+
+
 }
 
 

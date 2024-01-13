@@ -1,8 +1,8 @@
 function countAandB(input) {
-    let countA = 0
-    let countB = 0
+    let countA = 0;
+    let countB = 0;
 
-    for (let i = 0; i < input.legth; i++){
+    for (let i = 0; i < input.length; i++){
         if (input[i] === "a"){
             countA += 1;
         }   else if (input[i] === "b"){
@@ -14,13 +14,15 @@ function countAandB(input) {
 }
 
 function toNumber(input) {
-    let str = ''
+    const list = 'abcdefghijklmnopqrstuvwxyz' /*先建立索引*/
+    let result = []
 
-    for (let i=0; i < input.legth; i++){
-        str[i] = input[i].charCodeAt(0)
+    for (let i=0; i < input.length; i++){
+        let number = list.indexOf(input[i]) + 1;
+        result.push(number);
     }
 
-    return Str
+    return result;
 
 }
 
@@ -41,4 +43,6 @@ Comments: https://www.w3schools.com/js/js_comments.asp
 Convert Letters to Numbers with JS: https://stackoverflow.com/questions/22624379/how-to-convert-letters-to-numbers-with-javascript
 String.prototype.charCodeAt(): https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charCodeAt
 https://www.runoob.com/jsref/jsref-charcodeat.html
+IndexOf: https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf
+push(將值加到陣列中): https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/push
 */

@@ -1,0 +1,93 @@
+.page{
+    margin: 0;
+}
+
+
+
+.main-header{
+    background-color: white;
+    display: flex;
+    justify-content: start; /*靠左排好*/
+    align-items: center;
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 8px;
+}
+
+.main-nav {
+    display: flex; /*重要！！，把item攤平*/
+    list-style: none; /*移除list的點*/
+    color: #393A3D;
+}
+
+.main-nav li {
+    margin-right: 20px; /*調整Item間的間距*/
+}
+
+.blue-banner{
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    background-color: #1A73E8;
+    height: 80px;
+    line-height: 80px;
+}
+
+.grey-banner{
+    display:flex;
+    background-color: #F1F3F4;
+    align-items: center;
+    margin-top: -20px;
+    height: 80px;
+    line-height: 80px;
+    /*align-items: center;*/
+}
+
+.grey-banner img {
+    margin-left: 230px;
+}
+
+.grey-banner p{
+    margin-left: 20px;
+    color:#545555;
+    font-size: 16px;
+}
+
+
+
+.topic1{
+    margin-left:340px;
+    margin-top: 150px;
+    line-height: 1;
+}
+
+
+#br{                    /*感覺不宜用br...*/
+    font-size: 90px;
+}
+
+.topic1 h4{
+    margin-top:-50px;
+}
+
+/*========= Button =========*/
+
+.button-container {
+    text-align: center;
+}
+
+.button-container button {
+    display: inline-block; /*跟grey-banner平行同一行*/
+    color: #1A73E8;
+    font-weight: bold;
+    background-color: #FEFEFF;
+    width: 150px;
+    padding: 10px;
+    border: 0.5px solid #DADCE0;
+}
+
+
+
+
+
+

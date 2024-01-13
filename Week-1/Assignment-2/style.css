@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+.page{
+    margin: 0;
+}
+
 /*========= Nav Bar =========*/
 
 .main-header{
@@ -34,7 +38,7 @@
     background-color: lightsteelblue;
     height: 200px;
     text-align: center;
-    line-height: 200px;
+    line-height: 200px; /*與高相同以置中*/
 }
 
 /*========= Box Section =========*/
@@ -52,12 +56,12 @@ h2{
 
 
 .box {
-    font-size:13px;
     text-align:center;
+    font-size:14px;
 
-    width:450px;
-    height:80px;
-    background:#8899aa;
+    width:400px;
+    height:100px;
+    background:slategrey;
     margin:10px;
     margin-top:5px;
     padding-top:5px;
@@ -80,7 +84,7 @@ h2{
 
 /*========= Media Query =========*/
 
-@media (min-width: 1200px)
+@media (min-width: 1200px){
     .container {
         max-width: 1200px;
         margin: 0 auto;

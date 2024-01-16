@@ -1,7 +1,8 @@
 # remote-assignments
 Remote Assignments @Appworks School
+
 | Week |   #  | Project                                                                                                                     | 
-|      |  :-: | --------------------------------------------------------------------------------------------------------------------------- | 
+|:----:|------|-----------------------------------------------------------------------------------------------------------------------------| 
 |   1  |  02  | [Frontend Basic](https://github.com/chihyuchang21/remote-assignments/tree/main/Week-1/Assignment-2)                         | 
 |      |  03  | [JS Basic](https://github.com/chihyuchang21/remote-assignments/tree/main/Week-1/Assignment-3)                               |             
 |      |  04  | [Google Developer](https://github.com/chihyuchang21/remote-assignments/tree/main/Week-1/Assignment-4)                       | 

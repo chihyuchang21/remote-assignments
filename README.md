@@ -2,9 +2,9 @@
 Remote Assignments @Appworks School
 | Week |   #  | Project                                                                                                                     | 
 |      |  :-: | --------------------------------------------------------------------------------------------------------------------------- | 
-|   1  |  02  | [Frontend Basic](https://github.com/chihyuchang21/remote-assignments/tree/main/Week-1/Assignment-2)                              | 
-|      |  03  | [JS Basic](https://github.com/chihyuchang21/remote-assignments/tree/main/Week-1/Assignment-3)                                     |             
-|      |  04  | [Google Developer](https://github.com/chihyuchang21/remote-assignments/tree/main/Week-1/Assignment-4)                     | 
+|   1  |  02  | [Frontend Basic](https://github.com/chihyuchang21/remote-assignments/tree/main/Week-1/Assignment-2)                         | 
+|      |  03  | [JS Basic](https://github.com/chihyuchang21/remote-assignments/tree/main/Week-1/Assignment-3)                               |             
+|      |  04  | [Google Developer](https://github.com/chihyuchang21/remote-assignments/tree/main/Week-1/Assignment-4)                       | 
 |   2  |  01  | [Hidden Search Widget](https://github.com/bradtraversy/50projects50days/tree/master/hidden-search)                          | 
 |      |  02  | [Blurry Loading](https://github.com/bradtraversy/50projects50days/tree/master/blurry-loading)                               | 
 |      |  03  | [Scroll Animation](https://github.com/bradtraversy/50projects50days/tree/master/scroll-animation)                           | 
@@ -16,4 +16,4 @@ Remote Assignments @Appworks School
 |   4  |  01  | [Faq Collapse](https://github.com/bradtraversy/50projects50days/tree/master/faq-collapse)                                   | 
 |      |  02  | [Random Choice Picker](https://github.com/bradtraversy/50projects50days/tree/master/random-choice-picker)                   |
 |      |  03  | [Animated Navigation](https://github.com/bradtraversy/50projects50days/tree/master/animated-navigation)                     | 
-|      |  04  | [Incrementing Counter](https://github.com/bradtraversy/50projects50days/tree/master/incrementing-counter)                   | 
+|      |  04  | [Incrementing Counter](https://github.com/bradtraversy/50projects50days/tree/master/incrementing-counter)                   |

@@ -1,9 +1,12 @@
+/*========= All =========*/
+
 .page{
     margin: 0;
+    zoom: 0.8;
 }
 
 
-
+/*========= Navigation Bar =========*/
 .main-header{
     background-color: white;
     display: flex;
@@ -15,7 +18,7 @@
 }
 
 .main-nav {
-    display: flex; /*重要！！，把item攤平*/
+    display: flex; /*重要，把item攤平*/
     list-style: none; /*移除list的點*/
     color: #393A3D;
 }
@@ -23,6 +26,14 @@
 .main-nav li {
     margin-right: 20px; /*調整Item間的間距*/
 }
+
+.search-container{
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+
+/*========= Blue-banner =========*/
 
 .blue-banner{
     color: white;
@@ -32,6 +43,10 @@
     height: 80px;
     line-height: 80px;
 }
+
+
+
+/*========= Grey-banner =========*/
 
 .grey-banner{
     display:flex;
@@ -54,6 +69,8 @@
 }
 
 
+/*========= Topic-intro =========*/
+
 .topic-intro{
     margin-left:340px;
     margin-top: 80px;
@@ -72,8 +89,7 @@
 }
 
 
-
-#br{                    /*感覺不宜用br...*/
+#br{                    /*感覺不宜用#br...*/
     font-size: 90px;
 }
 
@@ -81,11 +97,6 @@
     margin-top:-50px;
 }
 
-
-.search-container{
-    margin-left: auto;
-    margin-right: 10px; /*這位置還要調整*/
-}
 
 
 /*========= Button =========*/

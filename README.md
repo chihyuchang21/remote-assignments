@@ -6,11 +6,11 @@ Remote Assignments @Appworks School
 |   1  | 02 | [Frontend Basic](https://github.com/chihyuchang21/remote-assignments/tree/main/Week-1/Assignment-2)       | 
 |      | 03 | [JS Basic](https://github.com/chihyuchang21/remote-assignments/tree/main/Week-1/Assignment-3)             |             
 |      | 04 | [Google Developer](https://github.com/chihyuchang21/remote-assignments/tree/main/Week-1/Assignment-4)     | 
-|   2  | 01 | [Func and Array](https://github.com/bradtraversy/50projects50days/tree/master/hidden-search)              | 
-|      | 02 | [Func, Array and Object](https://github.com/bradtraversy/50projects50days/tree/master/blurry-loading)     | 
-|      | 03 | [Data Manipulation](https://github.com/bradtraversy/50projects50days/tree/master/scroll-animation)         | 
-|      | 04 | [HTML DOM and Event Handling](https://github.com/bradtraversy/50projects50days/tree/master/split-landing-page)     | 
-|      | 05 | [Algorithm Practice](https://github.com/bradtraversy/50projects50days/tree/master/split-landing-page)     | 
+|   2  | 01 | [Func and Array](https://github.com/chihyuchang21/remote-assignments/tree/main/Week-2/Assignment-1)              | 
+|      | 02 | [Func, Array and Object](https://github.com/chihyuchang21/remote-assignments/tree/main/Week-2/Assignment-2)     | 
+|      | 03 | [Data Manipulation](https://github.com/chihyuchang21/remote-assignments/tree/main/Week-2/Assignment-3)         | 
+|      | 04 | [HTML DOM and Event Handling](https://github.com/chihyuchang21/remote-assignments/tree/main/Week-2/Assignment-4)     | 
+|      | 05 | [Algorithm Practice](https://github.com/chihyuchang21/remote-assignments/tree/main/Week-2/Assignment-5)     | 
 |   3  | 01 | [Form Wave](https://github.com/bradtraversy/50projects50days/tree/master/form-input-wave)                 | 
 |      | 02 | [Sound Board](https://github.com/bradtraversy/50projects50days/tree/master/sound-board)                   | 
 |      | 03 | [Dad Jokes](https://github.com/bradtraversy/50projects50days/tree/master/dad-jokes)                       | 

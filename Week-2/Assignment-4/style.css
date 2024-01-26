@@ -4,14 +4,13 @@
     box-sizing: border-box;
 }
 
-.page{
+.page {
     margin: 0;
 }
 
-
 /*========= Nav Bar =========*/
 
-.main-header{
+.main-header {
     background-color: lightgrey;
     margin-bottom: -25px;
     display: flex;
@@ -21,52 +20,49 @@
 
 .name {
     font-size: 14px;
-    margin-right: 20px; /*調整間距*/
-    font-weight: normal; /*不要套用h1粗體*/
+    margin-right: 20px; /* 調整間距 */
+    font-weight: normal; /* 不要套用 h1 粗體 */
     margin-left: 20px;
 }
 
 .main-nav {
-    display: flex; /*重要！！*/
-    list-style: none; /*移除list的點*/
+    display: flex; /* 重要！！ */
+    list-style: none; /* 移除 list 的點 */
 }
 
 .main-nav li {
-    margin-right: 20px; /*調整Item間的間距*/
+    margin-right: 20px; /* 調整 Item 間的間距 */
 }
 
 /*========= Welcome Msg =========*/
 
-.content-first-title{
+.content-first-title {
     background-color: lightsteelblue;
     height: 200px;
     text-align: center;
-    line-height: 200px; /*與高相同以置中*/
+    line-height: 200px; /* 與高相同以置中 */
 }
 
 /*========= Box Section =========*/
 
-h2{
+h2 {
     text-align: center;
 }
 
-
-.container{
-    display:flex;
-    justify-content:center;
+.container {
+    display: flex;
+    justify-content: center;
 }
 
-
-
 .box {
-    text-align:center;
-    font-size:14px;
-    width:400px;
-    height:100px;
-    background:slategrey;
-    margin:10px;
-    margin-top:5px;
-    padding-top:5px;
+    text-align: center;
+    font-size: 14px;
+    width: 400px;
+    height: 100px;
+    background: slategrey;
+    margin: 10px;
+    margin-top: 5px;
+    padding-top: 5px;
 }
 
 .hidden {
@@ -90,14 +86,9 @@ h2{
 
 /*========= Media Query =========*/
 
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
     .container {
         max-width: 1200px;
         margin: 0 auto;
     }
 }
-
-
-
-
-

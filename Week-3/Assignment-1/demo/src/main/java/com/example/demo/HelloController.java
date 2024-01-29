@@ -4,18 +4,19 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
 
 import static java.lang.Integer.parseInt;
 
 @Controller
 public class HelloController {
+
     @GetMapping("/")
     public String index() {
         return "index";
     }
 
     @GetMapping("/data")
+    //返回值
     @ResponseBody
     public String showData(@RequestParam(required = false, defaultValue = "0") String number) {
         try {
@@ -26,7 +27,7 @@ public class HelloController {
                 return "result";
             } else {
                 // Case: Valid positive integer
-                int sumResult = sum(intValue);
+                int sumResult = calculateSum(intValue);
                 // Other logic for handling non-null and positive number parameter
                 return String.valueOf(sumResult);
             }
@@ -36,7 +37,17 @@ public class HelloController {
         }
     }
 
-    private int sum(int n) {
+    @GetMapping("/sum.html")
+    public String sum(){
+        return "sum.html";
+    }
+
+    @GetMapping("myName")
+    public String sum(){
+        return "sum.html";
+    }
+
+    private int calculateSum(int n) {
         return n * (n + 1) / 2;
     }
 }

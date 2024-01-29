@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sequence Calculator</title>
+</head>
+<body>
+
+<div>
+    <label for="numberInput">Enter a number:</label>
+    <input type="text" id="numberInput" />
+
+    <!-- Button to trigger the AJAX request -->
+    <button onclick="calculateSum()">Calculate Sum</button>
+</div>
+
+<div id="result"></div>
+
+<script>
+    function calculateSum() {
+        // Get the value of the input field
+        var inputValue = document.getElementById('numberInput').value;
+
+        // Make an HTTP request using AJAX
+        var xhr = new XMLHttpRequest();
+
+        // Define the request
+        xhr.open('GET', '/data?number=' + inputValue, true);
+
+        // Set up a callback function to handle the response
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === XMLHttpRequest.DONE) {
+                if (xhr.status === 200) {
+                    // If the request was successful, update the result div with the response
+                    document.getElementById('result').innerText = 'Sum: ' + xhr.responseText;
+                } else {
+                    // If there was an error, update the result div with an error message
+                    document.getElementById('result').innerText = 'Error: ' + xhr.status;
+                }
+            }
+        };
+
+        // Send the request
+        xhr.send();
+    }
+
+</script>
+
+</body>
+</html>

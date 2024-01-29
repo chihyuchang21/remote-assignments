@@ -42,10 +42,6 @@ public class HelloController {
         return "sum.html";
     }
 
-    @GetMapping("myName")
-    public String sum(){
-        return "sum.html";
-    }
 
     private int calculateSum(int n) {
         return n * (n + 1) / 2;

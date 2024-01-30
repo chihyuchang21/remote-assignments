@@ -6,20 +6,23 @@
 </head>
 <body>
 
-<div>
-    <label for="numberInput">Enter a number:</label>
-    <input type="text" id="numberInput" />
+<h1>Sequence Calculator</h1>
 
-    <!-- Button to trigger the AJAX request -->
-    <button onclick="calculateSum()">Calculate Sum</button>
+<div>
+    <!-- Important: usage of label -->
+    <label for="inputNumber">Enter a number to calculate:</label>
+    <input type="text" id="inputNumber" />
+
+    <!-- Trigger the AJAX request -->
+    <button onclick="calculateSum()">Let's Calculate!</button>
 </div>
 
 <div id="result"></div>
 
 <script>
     function calculateSum() {
-        // Get the value of the input field
-        var inputValue = document.getElementById('numberInput').value;
+        // Get the value (whose id = 'inputNumber')
+        var inputValue = document.getElementById('inputNumber').value;
 
         // Make an HTTP request using AJAX
         var xhr = new XMLHttpRequest();
@@ -27,14 +30,14 @@
         // Define the request
         xhr.open('GET', '/data?number=' + inputValue, true);
 
-        // Set up a callback function to handle the response
+        // Set up a callback function
         xhr.onreadystatechange = function () {
             if (xhr.readyState === XMLHttpRequest.DONE) {
                 if (xhr.status === 200) {
-                    // If the request was successful, update the result div with the response
+                    // Case: Success
                     document.getElementById('result').innerText = 'Sum: ' + xhr.responseText;
                 } else {
-                    // If there was an error, update the result div with an error message
+                    // Case: Error
                     document.getElementById('result').innerText = 'Error: ' + xhr.status;
                 }
             }
@@ -44,6 +47,8 @@
         xhr.send();
     }
 
+    //Assignment3-(3)
+    makeHttpRequest();
 </script>
 
 </body>

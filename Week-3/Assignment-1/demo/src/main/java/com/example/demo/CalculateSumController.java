@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import static java.lang.Integer.parseInt;
 
 @Controller
-public class EntryController {
+public class CalculateSumController {
 
     @GetMapping("/")
     public String index() {
@@ -20,7 +20,12 @@ public class EntryController {
     @ResponseBody
     public String showData(@RequestParam(required = false) String number) {
         try {
-            //First: parse String to Int
+            //First: Check if the param is null
+            if (number == null){
+                return "Lack of Parameter";
+            }
+
+            //Then: parse String to Int
             int intValue = parseInt(number);
 
             if (intValue <= 0) {
@@ -33,7 +38,7 @@ public class EntryController {
             }
         } catch (NumberFormatException e) {
             // Case: Wrong Parameter (non-integer value)
-            return "parameter";
+            return "Wrong Parameter";
         }
     }
 

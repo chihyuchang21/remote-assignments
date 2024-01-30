@@ -1,23 +1,23 @@
 <!DOCTYPE html>
+<!-- Use thymeleaf -->
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Name</title>
 </head>
 <body>
 
 <h1>Welcome</h1>
 
-<!-- Check if the user's name is in cookies -->
+<!-- Check: if the user name cookie exists -->
 <div th:if="${hasUserNameCookie}">
-    <p th:text="'Your name: ' + ${userName}"></p>
+    <p th:text="'Hi, ' + ${userName}"></p>
 </div>
 
-<!-- If not, show the form -->
+<!-- Not Exists: show the form -->
 <div th:unless="${hasUserNameCookie}">
     <form action="/trackName" method="post">
-        <label for="nameInput">Enter your name:</label>
+        <label for="nameInput">What's your name:</label>
         <input type="text" id="nameInput" name="name" required>
         <button type="submit">Submit</button>
     </form>

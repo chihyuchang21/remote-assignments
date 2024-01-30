@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import static java.lang.Integer.parseInt;
 
 @Controller
-public class HelloController {
+public class EntryController {
 
     @GetMapping("/")
     public String index() {
@@ -16,19 +16,19 @@ public class HelloController {
     }
 
     @GetMapping("/data")
-    //返回值
+    //ResponseBody: return value(Without it, thymeleaf will return html file)
     @ResponseBody
-    public String showData(@RequestParam(required = false, defaultValue = "0") String number) {
+    public String showData(@RequestParam(required = false) String number) {
         try {
+            //First: parse String to Int
             int intValue = parseInt(number);
 
             if (intValue <= 0) {
-                // Case: Non-positive integer or invalid integer
-                return "result";
+                // Case: Non-positive integer or no integer (0)
+                return "Lack of Parameter";
             } else {
                 // Case: Valid positive integer
                 int sumResult = calculateSum(intValue);
-                // Other logic for handling non-null and positive number parameter
                 return String.valueOf(sumResult);
             }
         } catch (NumberFormatException e) {
@@ -47,6 +47,4 @@ public class HelloController {
         return n * (n + 1) / 2;
     }
 }
-//Comments:
-//I used Thymeleaf Template engine in this assignment.
 

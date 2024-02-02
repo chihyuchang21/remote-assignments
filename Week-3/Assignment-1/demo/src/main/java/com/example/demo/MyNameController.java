@@ -14,7 +14,7 @@ public class MyNameController {
         model.addAttribute("userName", userName);
         //If userName != empty means Cookie exist
         model.addAttribute("hasUserNameCookie", !userName.isEmpty());
-        //為了便利標示出.html副檔名
+        //.html
         return "myName.html";
     }
 }

@@ -34,13 +34,15 @@ function delayedResultPromise(n1, n2, delayTime) {
     });
 }
 
-delayedResultPromise(4, 5, 3000).then(console.log);
-// 9 (4+5) will be shown in the console after 3 seconds
+delayedResultPromise(4, 5, 3000).then(result =>{
+    console.log(`Result from Promise (3s): ${result}`);
+}); // 9 (4+5) will be shown in the console after 3 seconds
+
 
 
 /*===== 3. Async / Await =====*/
 async function main() {
-    const result1 = await delayedResultPromise(4,5,3000);
+    const result1 = await delayedResultPromise(4,5,1000);
     console.log("Result from Async (3s):", result1);
 
     const result2 = await delayedResultPromise(-5, 10, 2000);

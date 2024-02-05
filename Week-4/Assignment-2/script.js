@@ -1,6 +1,18 @@
+/*
+The callback function is responsible for handling the data of the AJAX response.
+In this way, you can pass the data to externally defined logic when the response is received.
+*/
+
+
 function ajax(src, callback) {
-    var request = new XMLHttpRequest();
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function(){
+      if (xhr.readyState === 4 && xhr.status === 200){
+          callback(xhr.responseText);
+      }
+    };
     xhr.open('GET', src, true);
+    xhr.send();
 }
 
 function render(data) {

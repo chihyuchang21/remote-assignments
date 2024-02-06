@@ -16,7 +16,7 @@ Remote Assignments @Appworks School Batch #23 (2024)
 |      |           | 03 | [Backend API by AJAX](https://github.com/chihyuchang21/remote-assignments/tree/main/Week-3/Assignment-1/demo/src/main) | 
 |      |           | 04 | [HTTP Cookie](https://github.com/chihyuchang21/remote-assignments/tree/main/Week-3/Assignment-1/demo/src/main)         |
 |      |           | 05 | [Two Sum](https://github.com/chihyuchang21/remote-assignments/tree/main/Week-3/Assignment-5)                           |
-|   4  | 1/31~2/6  | 01 | [JS Asynchronous Func](https://github.com/bradtraversy/50projects50days/tree/master/faq-collapse)                      | 
-|      |           | 02 | [Callback Func & Adv HTML DOM](https://github.com/bradtraversy/50projects50days/tree/master/random-choice-picker)      |
-|      |           | 03 | [My SQL Website](https://github.com/bradtraversy/50projects50days/tree/master/animated-navigation)                     | 
-|      |           | 04 | [Table Schema](https://github.com/bradtraversy/50projects50days/tree/master/incrementing-counter)              |
+|   4  | 1/31~2/6  | 01 | [JS Asynchronous Func](https://github.com/chihyuchang21/remote-assignments/tree/main/Week-4/Assignment-1)                      | 
+|      |           | 02 | [Callback Func & Adv HTML DOM](https://github.com/chihyuchang21/remote-assignments/tree/main/Week-4/Assignment-2)      |
+|      |           | 03 | [My SQL Website](https://github.com/chihyuchang21/remote-assignments/tree/main/Week-4/Assignment-3)                     | 
+|      |           | 04 | [Table Schema](https://github.com/chihyuchang21/remote-assignments/tree/main/Week-4/Assignment-4)              |

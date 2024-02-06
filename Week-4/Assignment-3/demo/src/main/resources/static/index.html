@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Log In / Sign Up</title>
+</head>
+<body>
+    <h1>Log In / Sign Up</h1>
+
+    <form id="signup-form" action="/signup" method="POST">
+        <fieldset>
+            <legend>Sign Up</legend>
+
+            <label for="signUpEmail">Email:</label>
+            <input id="signUpEmail" name="signUpEmail" type="text" required />
+
+            <label for="signUpPassword">Password:</label>
+            <input id="signUpPassword" name="signUpPassword" type="password" required />
+
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+
+    <form id="signin-form" action="/signin" method="POST">
+        <fieldset>
+            <legend>Sign In</legend>
+
+            <label for="signInEmail">Email:</label>
+            <input id="signInEmail" name="signInEmail" type="text" required />
+
+            <label for="signInPassword">Password:</label>
+            <input id="signInPassword" name="signInPassword" type="password" required />
+
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+
+    <script src="/index.js"></script>
+</body>
+</html>

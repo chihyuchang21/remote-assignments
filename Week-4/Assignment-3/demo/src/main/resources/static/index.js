@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     // Signup failed, display error message or take appropriate action
                     console.log('Signup failed:', data.message);
                     // You can show an error message on the home page
+                    window.location.href = 'fail.html';
                 }
             })
             .catch(error => console.log(error));
